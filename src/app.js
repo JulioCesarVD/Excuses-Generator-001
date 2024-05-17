@@ -6,13 +6,12 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  document.querySelector("#the-excuse").innerHTML = generateExcuse();
-  console.log("Hello Rigo from the console!");
+  document.querySelector("#excuse").innerHTML = generateExcuse();
 
-  let button = document.querySelector(".btn");
+  let buttonExcuse = document.querySelector(".btn");
 
-  button.addEventListener("click", function() {
-    document.querySelector("#the-excuse").innerHTML = generateExcuse();
+  buttonExcuse.addEventListener("click", function() {
+    document.querySelector("#excuse").innerHTML = generateExcuse();
   });
 };
 
